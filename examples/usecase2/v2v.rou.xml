@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+
+
+<!--
+<routes>
+	<vType id="vtype0" accel="2.6" decel="4.5" sigma="0.5" length="2.5" minGap="2.5" maxSpeed="120" color="1,1,0"/>
+	
+	<route id="turn_left" edges="24242838#0 -23755731#0"/>
+	<route id="turn_left_up_down" edges="23755731#0 24242838#1"/>
+	<route id="turn_right" edges="24242838#0 23755731#1"/>
+	<route id="go_traight" edges="24242838#0 24242838#1"/>
+	<route id="go_traight_ltr" edges="-24242838#1 -24242838#0"/>
+	
+	<route id="host_route_go_straight" edges="-23755731#1 -23755731#0"/>
+	
+	<flow id="flow0" type="vtype0" route="turn_left" begin="0" period="3" number="1"/>
+	<flow id="flow3" type="vtype0" route="host_route_go_straight"  begin="0" number="1"/>
+	<flow id="flow4" type="vtype0" route="turn_left_up_down" begin="0" arrivalSpeed="current" period="3" number="1"/>
+	<flow id="flow5" type="vtype0" route="go_traight_ltr" begin="0"  arrivalSpeed="current" period="3" number="1"/>
+</routes>
+
+
+
+<?xml version="1.0"?>
+<routes>
+	<vType id="vtype0" accel="2.6" decel="4.5" sigma="0.5" length="2.5" minGap="2.5" maxSpeed="33.3" color="1,1,0"/>
+	
+	<route id="host_route_go_straight" edges="-23755731#1 -23755731#0"/>
+	
+	<route id="turn_left" edges="23755731#0 24242838#1"/>
+	<route id="turn_right" edges="23755731#0 -24242838#0"/>
+	<route id="go_traight" edges="23755731#0 23755731#1"/>
+	
+	<flow id="flow0" type="vtype0" route="host_route_go_straight" begin="0" departSpeed="max" arrivalSpeed="current" period="3"  number="1"/>
+	<flow id="flow1" type="vtype0" route="turn_left" begin="0" departSpeed="max" arrivalSpeed="current" period="3" number="1"/>
+
+</routes>
+-->
+
+<routes>
+<vType id="vtype0" accel="2.6" decel="4.5" sigma="0.5" length="2.5" minGap="2.5" maxSpeed="33.3" color="1,1,0"/>
+
+
+
+<route id="turn_left" edges="24242838#0 -23755731#0"/>
+<route id="turn_left_up_down" edges="23755731#0 24242838#1"/>
+<route id="turn_right" edges="24242838#0 23755731#1"/>
+<route id="go_traight" edges="24242838#0 24242838#1"/>
+<route id="go_traight_ltr" edges="-24242838#1 -24242838#0"/>
+<route id="host_route_go_straight" edges="-23755731#1 -23755731#0"/>
+
+
+
+<route id="turn_left1" edges="-24242838#1 -23755731#0"/>
+<route id="go_traight1" edges="-24242838#1 -24242838#0"/>
+<route id="turn_right1" edges="-24242838#1 23755731#1"/>
+
+
+
+<route id="turn_left2" edges="23755731#0 24242838#1"/>
+<route id="go_traight2" edges="23755731#0 23755731#1"/>
+<route id="turn_right2" edges="23755731#0 -24242838#0"/>
+
+
+<flow id="flow1" type="vtype0" route="turn_left" begin="0" period="3" number="1"/>
+<flow id="flow2" type="vtype0" route="turn_right" begin="0" arrivalSpeed="current" period="3" number="1"/>
+<flow id="flow3" type="vtype0" route="go_traight" begin="0" arrivalSpeed="current" period="3" number="1"/>
+
+
+
+<flow id="flow4" type="vtype0" route="turn_left1" begin="0" period="3" number="1"/>
+<flow id="flow5" type="vtype0" route="turn_right1" begin="0" arrivalSpeed="current" period="3" number="1"/>
+<flow id="flow6" type="vtype0" route="go_traight1" begin="0" arrivalSpeed="current" period="3" number="1"/>
+
+
+
+<flow id="flow7" type="vtype0" route="turn_left2" begin="0" period="3" number="1"/>
+<flow id="flow8" type="vtype0" route="turn_right2" begin="0" arrivalSpeed="current" period="3" number="1"/>
+<flow id="flow9" type="vtype0" route="go_traight2" begin="0" arrivalSpeed="current" period="3" number="1"/>
+
+
+
+</routes>

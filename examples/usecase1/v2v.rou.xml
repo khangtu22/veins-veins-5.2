@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<routes>
+<vType id="vtype0" accel="2.6" decel="4.5" sigma="0.5" length="2.5" minGap="2.5" maxSpeed="120" color="1,1,0"/>
+
+<route id="HV" edges="24242838#0 -23755731#0 "/>
+
+<route id="RV1" edges="-24242838#1 -24242838#0"/>
+
+<route id="RV2" edges="23755731#0 23755731#1"/>
+
+<route id="RV3" edges="-23755731#1 -23755731#0"/>
+
+<flow id="flow0" type="vtype0" route="HV" begin="0" number="1"/>
+<flow id="flow1" type="vtype0" route="RV1" begin="0" number="1"/>
+<flow id="flow2" type="vtype0" route="RV2" begin="0" number="1"/>
+<flow id="flow3" type="vtype0" route="RV3" begin="0" number="1"/>
+</routes>
