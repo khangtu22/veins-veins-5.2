@@ -62,6 +62,8 @@
 <route id="turn_right2" edges="23755731#0 -24242838#0"/>
 
 
+<flow id="flow0" type="vtype0" route="host_route_go_straight" begin="0" number="1"/>
+
 <flow id="flow1" type="vtype0" route="turn_left" begin="0" period="3" number="1"/>
 <flow id="flow2" type="vtype0" route="turn_right" begin="0" arrivalSpeed="current" period="3" number="1"/>
 <flow id="flow3" type="vtype0" route="go_traight" begin="0" arrivalSpeed="current" period="3" number="1"/>
